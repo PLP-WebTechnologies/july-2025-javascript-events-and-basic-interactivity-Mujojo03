@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 Assignment - Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌐 JR Interactive Web Page</h1>
+    <button id="themeToggle" aria-label="Toggle between light and dark mode">Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling Example -->
+    <section>
+      <h2>🎉 Click Counter</h2>
+      <p>Click the button and see the count increase!</p>
+      <button id="countBtn">Click Me!</button>
+      <p id="countDisplay">Count: 0</p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>❓ FAQ Section</h2>
+      <div class="faq-item">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript makes web pages interactive and dynamic.</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What is DOM?</h3>
+        <p class="faq-answer">DOM (Document Object Model) lets JavaScript change HTML content.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>📋 Form Validation</h2>
+      <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+        <small class="error" id="emailError"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+    <!-- Part 4: Todo List -->
+    <section>
+      <h2>📝 Todo List</h2>
+      <input type="text" id="todoInput" placeholder="Add a new task..." aria-label="Enter a new todo item">
+      <button id="addTodoBtn" aria-label="Add todo item">Add Task</button>
+      <ul id="todoList" aria-label="List of todo items"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

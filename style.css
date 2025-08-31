@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode button {
+  background-color: #444;
+  color: #fff;
+}
+
+/* FAQ */
+.faq-answer {
+  display: none;
+  margin-left: 10px;
+  color: #555;
+}
+
+.faq-question {
+  cursor: pointer;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+input, #todoInput {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+#formMessage {
+  font-weight: bold;
+  margin-top: 10px;
+}
+#formMessage.success {
+  color: green;
+}
+
+/* Todo List */
+#todoList {
+  list-style-type: none;
+  padding-left: 0;
+  max-width: 300px;
+}
+
+#todoList li {
+  background-color: #eee;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todoList li button {
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#todoList li button:hover {
+  background-color: #c9302c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+  form, #todoList {
+    max-width: 100%;
+  }
+}
